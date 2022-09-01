@@ -1,0 +1,49 @@
+/*remove all the basic styling*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(120deg, #ad379a, #723b2a);
+    color: blue;
+    font-family: "poppins", sans-serif;
+    min-height: 100vh ;
+}
+header {
+    font-size: 1.5rem;
+}
+header, form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input, form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+form button{
+    color: #723b2a;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form button:hover{
+    background: #723b2a;
+    color: white;
+}
+ .todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .todo-list {
+    min-width: 30%; 
+    list-style: none;  
+ }
+ .todo{
+    
+ }
