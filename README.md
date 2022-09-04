@@ -1,8 +1,8 @@
 
 
 ## TABLE OF CONTENTS
-✖️Project Name
-#Author Name
+✖️Project Name <br>
+✖️Author Name <br>
 #Project description
 #Project Set Up Instructions
 #Project Live Link
