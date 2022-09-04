@@ -110,6 +110,7 @@ form button:hover{
     right: 0;
     padding: 1rem;
     pointer-events: none;
+    transform: all 0.3s ease;
 
   }
   .select:hover::after {
