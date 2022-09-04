@@ -87,3 +87,8 @@ function deleteCheck(e){
         });
 
     }
+
+    function saveLocalTodos(todo) {
+        
+
+    }
