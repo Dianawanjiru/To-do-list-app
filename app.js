@@ -135,3 +135,7 @@ function deleteCheck(e){
 
         })
     }
+
+    document.addEventListener("DOMContentLoaded",()=>{
+        addToDo();
+    })
