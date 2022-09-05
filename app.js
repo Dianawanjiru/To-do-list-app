@@ -88,16 +88,34 @@ function deleteCheck(e){
 
     }
 
-    function saveLocalTodos(todo) {
-        //check if things already exist here
-        let todos;
-        if(localStorage.getItem("todos")===null){
-            todos=[];
-        } else {
-            todos=JSON.parse(localStorage.getItem("todos"))
+    
+
+        
+
+
+    
+
+    let todoLists;
+
+    const apiHost = "  http://localhost:3000"
+     
+    function postTodos(e){
+        const fetchTodos = todoInput.value
+        const fetchParameters = {
+            method : "POST",
+            body : JSON.stringify({
+                fetchTodos,
+                todoLists
+                
+            }),
+            headers : {
+                "Content-Type":"application/json"
+            }
         }
-        todos.push(todo);
-        localStorage.setItem("todos", JSON.stringify("todos"));
 
+        fetch(`${apiHost}`,fetchParameters).then((response)=>{
+            addToDo();
+            deleteCheck();
 
+        })
     }
